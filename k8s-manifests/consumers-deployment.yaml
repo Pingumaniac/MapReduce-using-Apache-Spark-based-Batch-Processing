@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inference-consumer
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: inference-consumer
+  template:
+    metadata:
+      labels:
+        app: inference-consumer
+    spec:
+      containers:
+      - name: inference-consumer
+        image: roberthsheng/team6:inference-consumer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: db-consumer
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: db-consumer
+  template:
+    metadata:
+      labels:
+        app: db-consumer
+    spec:
+      containers:
+      - name: db-consumer
+        image: roberthsheng/team6:db-consumer
