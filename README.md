@@ -69,7 +69,7 @@ cd ~/common/spark-3.5.3-bin-hadoop3
     --conf spark.kubernetes.namespace=team6 \
     --conf spark.kubernetes.container.image=192.168.1.81:5000/common/spark-py \
     --packages org.mongodb.spark:mongo-spark-connector_2.12:3.0.1 \
-    local:///home/cc/common/spark-3.5.3-bin-hadoop3/wrong_inferences.py
+    local:///home/cc/common/spark-3.5.3-bin-hadoop3/mapreduce.py
 ```
 
 ## Results
