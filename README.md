@@ -28,7 +28,7 @@ python3.10 -m venv ~/.py310venv
 source ~/.py310venv/bin/activate
 ```
 
-2. Build and push Docker images:
+2. Build and push Docker images (in our case, to roberthsheng/team6):
 ```bash
 # Build images
 docker build -t yourhubusername/team6:ml-server services/ml_server/
