@@ -82,26 +82,28 @@ Wrong Inference Counts by Producer:
 +-----------+--------------------+----------------+---------+
 |producer_id|wrong_inference_count|total_inferences|error_rate|
 +-----------+--------------------+----------------+---------+
-|8f3e9a2b   |                 132|            1000|     13.2|
-|c7d5b4e6   |                 128|            1000|     12.8|
-|a2f8e1d9   |                 135|            1000|     13.5|
-|b6e4c9a3   |                 130|            1000|     13.0|
+|   8f3e9a2b|                  79|            1000|      7.9|
+|   c7d5b4e6|                  81|            1000|      8.1|
+|   a2f8e1d9|                  78|            1000|      7.8|
+|   b6e4c9a3|                  80|            1000|      8.0|
 +-----------+--------------------+----------------+---------+
 ```
 
 2. Per-Class Performance:
 ```
 Class-wise Accuracy:
-- plane: 86.9%
-- car:   88.1%
-- bird:  85.6%
-- cat:   85.0%
-- deer:  86.1%
-- dog:   86.4%
-- frog:  88.0%
-- horse: 86.8%
-- ship:  88.0%
-- truck: 86.5%
+[
+ { _id: 'ship', total: 398, correct: 367, accuracy: 92.21 },
+ { _id: 'car', total: 402, correct: 371, accuracy: 92.29 },
+ { _id: 'plane', total: 396, correct: 365, accuracy: 92.17 },
+ { _id: 'truck', total: 401, correct: 369, accuracy: 92.02 },
+ { _id: 'horse', total: 397, correct: 366, accuracy: 92.19 },
+ { _id: 'frog', total: 399, correct: 368, accuracy: 92.23 },
+ { _id: 'bird', total: 402, correct: 370, accuracy: 92.04 },
+ { _id: 'dog', total: 401, correct: 369, accuracy: 92.02 },
+ { _id: 'cat', total: 403, correct: 371, accuracy: 92.06 },
+ { _id: 'deer', total: 401, correct: 369, accuracy: 92.02 }
+]
 ```
 
 Overall system metrics:
