@@ -127,6 +127,11 @@ Our system consists of:
 * Robert Sheng: Developed the Spark MapReduce analysis and MongoDB integration
 * Youngjae Moon: Implemented the Kubernetes deployments and Docker containerization
 * Lisa Liu: Created the ResNet18 inference server and producer components
+* 
+
+## Learning Curve (Effort Expended):
+
+For this programming assignment, the hardest part was by far making our implementation work with our current Mongo setup. We kept getting connection errors; figuring that out made the entire project a lot easier. A lot of our current setup is just reused from our previous projects, the only part that we had to change was storing the producer IDs when sending data.
 
 ## Team Members
 
