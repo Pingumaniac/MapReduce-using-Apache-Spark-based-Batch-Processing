@@ -1,5 +1,6 @@
-# CS5287_Cloud_Computing_Team6_Homework4
-MapReduce using Apache Spark-based Batch Processing
+# MapReduce using Apache Spark-based Batch Processing
+
+CS 5287 Programming Assignment 4
 
 ## Goals
 
